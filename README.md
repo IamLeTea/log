@@ -1,8 +1,14 @@
-# log
+# Log
 
 [![npm version](https://badge.fury.io/js/%40letea%2Flog.svg)](https://badge.fury.io/js/%40letea%2Flog)
 
 A console with label for Browser.
+
+## Install
+
+```bash
+npm install @letea/log
+```
 
 ## Usage
 
