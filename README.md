@@ -33,6 +33,16 @@ const log3 = new Log({
 log3.error("This is a error message.");
 ````
 
+### Options
+
+```js
+{
+  label: string,
+  labelBackgroundColor: string, // color format
+  messageColor: string          // color format
+}
+```
+
 ## Result
 
 ### Light Mode
