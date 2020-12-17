@@ -1,5 +1,6 @@
 // node modules
 import getRandomValueInArray from "@letea/functions/getRandomValueInArray";
+import checkIsString from "@letea/functions/checkIsString";
 
 const DEFAULT_LABEL_STYLE =
   "font-weight: bold; padding: .1rem .25rem; margin-right: .25rem;";
@@ -24,10 +25,15 @@ const defaultProps = {
 
 class Log {
   constructor(props = defaultProps) {
+    if (checkIsString(props)) {
+      props = { label: props };
+    }
+
     const { label, labelColor, labelBackgroundColor, messageColor } = {
       ...defaultProps,
       ...props
     };
+
     this.label = label;
     this.labelColor = labelColor;
     this.labelBackgroundColor =

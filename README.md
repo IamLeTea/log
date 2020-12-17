@@ -17,10 +17,15 @@ npm install @letea/log
 ```js
 import Log from "@letea/log";
 
+const log = new Log("Log 1");
+log.print("This is a print message");
+
+// Or this way
+/* 
 const log = new Log({
   label: "Log 1"
 });
-log.print("This is a print message");
+*/
 
 const log2 = new Log({
   label: "Log 2",
@@ -33,7 +38,7 @@ const log3 = new Log({
   labelBackgroundColor: "#0a0"
 });
 log3.error("This is a error message.");
-````
+```
 
 ### Options
 
@@ -49,8 +54,8 @@ log3.error("This is a error message.");
 
 ### Light Mode
 
-<img src="https://i.imgur.com/RJ91r0r.png" alt="" /> 
+<img src="https://i.imgur.com/RJ91r0r.png" alt="" />
 
 ### Dark Mode
 
-<img src="https://i.imgur.com/BYhrVY0.png" alt="" /> 
+<img src="https://i.imgur.com/BYhrVY0.png" alt="" />
