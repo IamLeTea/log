@@ -4,6 +4,8 @@
 
 A console with label for Browser.
 
+[Live Demo](https://codesandbox.io/s/flamboyant-elbakyan-juqdb?expanddevtools=1&fontsize=14&hidenavigation=1&theme=dark)
+
 ## Install
 
 ```bash
