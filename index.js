@@ -1,10 +1,24 @@
+// node modules
+import getRandomValueInArray from "@letea/functions/getRandomValueInArray";
+
 const DEFAULT_LABEL_STYLE =
   "font-weight: bold; padding: .1rem .25rem; margin-right: .25rem;";
+const DEFAULT_COLORS = [
+  "#f94144",
+  "#f3722c",
+  "#f8961e",
+  "#f9844a",
+  "#90be6d",
+  "#43aa8b",
+  "#4d908e",
+  "#577590",
+  "#277da1"
+];
 
 const defaultProps = {
   label: "",
   labelColor: "#ffffff",
-  labelBackgroundColor: "#0a415c",
+  labelBackgroundColor: "",
   messageColor: ""
 };
 
@@ -16,7 +30,8 @@ class Log {
     };
     this.label = label;
     this.labelColor = labelColor;
-    this.labelBackgroundColor = labelBackgroundColor;
+    this.labelBackgroundColor =
+      labelBackgroundColor || getRandomValueInArray(DEFAULT_COLORS);
     this.messageColor = messageColor;
   }
 

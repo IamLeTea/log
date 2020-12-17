@@ -1,6 +1,6 @@
 {
   "name": "@letea/log",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -26,5 +26,8 @@
   },
   "devDependencies": {
     "eslint": "^7.14.0"
+  },
+  "dependencies": {
+    "@letea/functions": "^2.4.1"
   }
 }
